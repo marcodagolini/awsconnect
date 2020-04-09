@@ -26,12 +26,13 @@
     "SourcePhoneNumber" : '+442073656117',
     "DestinationPhoneNumber" : '+393425929015',
     "Attributes" : {
-        'name' : 'Marco
+        'name' : 'Marco'
     }
 }
 let connect = new AWS.Connect();
 connect.startOutboundVoiceContact(params, function (error, response) {
-  console.log(response);
+	console.log(response);
+	console.log(error);
 });
 	
  
